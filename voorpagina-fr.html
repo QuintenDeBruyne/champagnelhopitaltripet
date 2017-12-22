@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+         <link rel="stylesheet" href="css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name = "keywords" content = "champagne, lhopital-tripet, venteuil">
+		<meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8"> 
+	</head>
+	<body>
+		<div  class = "voorpagina-fr">
+			<h1 class = "weergeven">Champagne</h1>
+			<h2 class = "weergeven">Lhopital - Tripet</h2>
+                        <img class = "hondje" id="hondje" alt="" src="http://champagnelhopital-tripet.fr/wp-content/uploads/2017/07/hond-bijgewerkt-1.png">
+		        <div class ="waarschuwing weergeven"><p>En visitant ce site, je certifie avoir l'âge légal pour la consommation d'alcol dans mon pays de résidence.</p>
+<a href="http://champagnelhopital-tripet.fr/acceuil/">Continuer</a></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+function wordtZichtbaar() {
+$('.weergeven').animate({opacity: 1}, 'slow');}
+</script>
+<script>
+function verdwijn() {
+$(".weergeven").css("display", "none");
+}
+</script>
+<script>
+$(document).ready(function(){
+verdwijn();
+var breedte = $(window).width();
+breedte = breedte * 0.17;
+        $("#hondje").delay("2000").animate({width: breedte}, 2000);
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    </body>
+
+</html>
